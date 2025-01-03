@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clocks And Timers</title>
+   <link rel="stylesheet"  href="style.css" type ="text/css">
+    <link rel="stylesheet"  href="AppsStyleSheet.css" type ="text/css" media = "screen"/> 
+  <style>
+    
+
+
+#clock1 {
+height: 600px;
+width: 500px;
+  text-align: center;
+margin-right: 20px;
+background: url('images/digiclock7.jpg');
+background-repeat: no-repeat;
+color: white;
+
+//box-shadow: 40px 40px 70px #00d2c6, -60px -60px 90px #00ffff;
+}
+  	
+
+#clock{height: 120px;
+width: 330px;
+top:80%;
+transform: translate(0,80%);
+margin-left: 42px;
+background: black;
+color: red;
+}
+
+#clock2{height: 120px;
+width: 320px;
+top:20%;
+transform: translate(0,20%);
+font-size: 80px;
+color: ;
+}
+button {height:50px;
+width: 100px;
+border-radius: 30%;
+
+
+}
+
+</style>
+  </head>
+
+<body>
+<Div id="rb7"> 
+<br><br>
+    <h1 id="h1a"> ANALYZE WITH AKU</h1>
+
+    <ul id = "a2">
+      <li> <a href = "index.html"> Welcome </a></li> &nbsp;&nbsp;&nbsp;
+      <li><a href = "my_portfolio.html"> Portfolio </a></li> &nbsp;&nbsp;&nbsp; 
+      <li><a href = "About_me.html"> About Me </a></li>
+      &nbsp;&nbsp;&nbsp;
+       
+
+  </ul>
+</Div>
+    
+   
+    
+
+<Div id="a3">
+<h1> CLOCKS AND TIMERS</h1> </Div>
+  <p style="font-size: 23pt">
+
+Time keeping is as old as time itself. Indeed from the ancient hour-glass to the millenial digital stop watches, humans have always found it necessary to keep track of their daily activities with regards to time. And today, clocks and timers come in every possible shape and size in every industry where they are required, as very useful gadgets.  
+ <br> <br>
+  
+ DIGITAL CLOCKS:  Popular industries that utilise digital clocks include the Travel and Tourism industry with digital clock installed among flight and travel instruments.
+
+  <br> <br>
+  
+  TIMERS: Food processing gadgets such as microwave ovens come woth pre-installed timers to ensure adequate timing in food preparation. 
+    
+  <br> <br>
+  
+   Click the buttons below for the current time (GMT) or to begin the timer. </p>
+   <br> <br>
+  
+   
+  
+  
+ <!-- <Div id="rb4"> -->
+<Div id="a3"> 
+<h3> DIGITAL CLOCK </h3>
+  </Div>
+
+  <br> 
+
+<button onclick="clockStart()"> START CLOCK</button> 
+  
+  <br> <br>
+  <div id="clock1">  <div id="clock"><span id="clck"> PWR OFF </span> <span id="clock2"> </span>  </div> </div> 
+
+<script>
+
+function clockStart() { setInterval(function() {
+ date = new Date()
+ let hour = date.getHours();
+ let minutes = date.getMinutes();
+ let seconds = date.getSeconds(); 
+document.getElementById('clck').innerHTML
+= 'PWR ON';
+document.getElementById('clock2').innerHTML 
+= hour + ':' 
++ minutes + ':' 
++ seconds; 
+
+}, 1000);
+
+ } 
+
+</script>
+    
+
+  <Div id="a3">
+<h3> COUNTDOWN TIMER </h3>
+  </Div>
+    <br><br>
+<button onclick="startTimer()"> START TIMER</button>   
+    <br><br>
+<div style="height:300px; width:500px; background: hotpink; font-size: 50px; color:purple; box-shadow: 40px 40px 70px #00d2c6, -60px -60px 90px #00ffff; text-align:center; border-radius:30%;">
+        
+      <b>  TIMER </b><br>
+         <div style="height:160px; margin-left:80px; width:340px; font-size:60px; color:#5C0632; background:aliceblue; border-radius:20%;">
+       
+    <button id="demo" style="height:80px; width:250px; font-size:60px; margin-top: 40px; color:#5C0632; background:purple; border-radius:20%;"></button></div>
+    </div>
+<script>
+// Set the date were counting down to 
+  let  dt = new Date();
+ dt = new Date(dt.getTime() + 30 * 60 * 1000);
+    
+// Update the count down every 1 second
+  function startTimer() { 
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = dt - now;
+    
+  // Time calculations - days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));  
+ var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result- an element id="demo"
+  document.getElementById("demo").innerHTML = minutes + ":" + seconds;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Done";
+  }
+}, 1000)
+};
+</script>
+
+    
+
+<div id="rb4"></div> 
+</body>
+
+
+
+<footer id="ft2">
+  
+  <a href="Apps_portfolio.html"> BACK </a>
+        <a style="float:right" href="Apps_Portfolio.html"> NEXT </a>
+
+  
+<br> <br> 
+
+<p style="text-align: center">  
+  CONTACT
+  
+ <li style="list-style-type: none; text-align: center"> Mail: <a href="mailto:akuwealth@yahoo.com" target="_blank" rel="noopener"> akuwealth@yahoo.com</a></li>
+
+<p style="text-align: center">  
+     © AnalyzeWithAku 2022</p>
+
+    
+
+</footer>
+</html>

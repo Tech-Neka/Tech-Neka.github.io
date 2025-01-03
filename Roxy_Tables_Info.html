@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Roxy Tables Scheme - SQL </title>
+    <link rel="stylesheet"  href="style.css" type ="text/css" media = "screen"/> 
+  </head>
+
+
+  <body>
+  
+<Div id="rb1"> 
+  <br><br>
+    <h1 id="h1a"> ANALYZE WITH AKU </h1>
+
+    <ul id = "a2">
+      <li><a href = "index.html"> Welcome </a></li> &nbsp;&nbsp;&nbsp;
+      <li><a href = "my_portfolio.html"> Portfolio </a></li> &nbsp;&nbsp;&nbsp; 
+      <li><a href = "About_me.html"> About Me </a></li>
+  </ul>
+</Div>
+
+<Div id="a3">
+<h2> ROXY BDC: SQL SCHEME </h2> </Div>
+<br>
+<b style="font-size: 25pt;"> PURPOSE </b> 
+<Div id="a4">
+<p style="font-size: 25pt;">
+The main purpose of the Tables Scheme is to specify the appropriate data types to use for the data research and to specify integer ranges, in view of setting constraints to prevent mistakes and outliers. 
+
+But it is also a means for identifying, and a source of obtaining useful and invaluable information about the company and its Key Performance Indicators (KPIs).
+
+It is used furthermore, for identifying professional working terms which differ from industry to industry, company to company and analyst to analyst.</p>
+<br>
+
+<style> Table, TH, TD {border:2px solid black; background: mintcream} </style>
+<Table>
+<h3> CUSTOMERS </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH></TH></TR>
+<TR><TD> CUSTOMER_ID </TD><TD> INTEGER &nbsp; &nbsp; </TD><TD> This is a unique identity number given to Roxy's Customers. </TD></TR>
+<TR><TD> GENDER </TD><TD> NVARCHAR(50) </TD><TD> This is the gender description </TD></TR>
+<TR><TD> ADRESS </TD><TD> NVARCHAR(50) </TD><TD> This is the office or home address of the client, but the best contact </TD></TR>
+<TR><TD> PASSPORT_NO.</TD><TD> NVARCHAR(50) </TD><TD> This is the required identity card for buying FOREX globally </TD></TR> 
+  <TR><TD> NATIONALITY </TD><TD> NVARCHAR(50) </TD><TD> This is the ISO-2 Code representing the  clients Nationality </TD></TR> 
+    <TR><TD> CUSTOMER_NAME </TD> <TD> NVARCHAR(50) </TD><TD> These are the names of the customers </TD></TR>
+    <TR><TD> OCCUPATION </TD><TD> NVARCHAR(50) </TD><TD> This is the job position of the customer </TD></TR>
+    <TR><TD> CATEGORY </TD><TD> NVARCHAR(50) </TD><TD> This is the category the customer is classified in purchasing reasons</TD></TR>
+    <TR><TD> AGE_RANK </TD><TD> INTEGER </TD><TD> This is the age group to which the customer belongs </TD></TR>
+    <TR><TD> ACQUAINTANCE </TD><TD> NVARCHAR(50) </TD><TD> This describes how the client got to know about the firm. </TD></TR> 
+</Table>
+<br>
+
+
+
+<Table>
+<h3> FOREX PURCHASES </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE </TH><TH> 
+<TR><TD> BUY_DATE </TD><TD> NVARCHAR(50) </TD><TD> This is the date, usually on a Monday, when vendors pay the Central Bank, in local currency, for the purchase of dollars </TD></TR> 
+<TR><TD> TXN_ID </TD><TD> INTEGER  </TD><TD> This is a unique identity number for each purchase or sale transaction done by Roxy BDC.  
+<TR><TD> BUY_DAY </TD><TD> NVARCHAR(50) </TD><TD> This is the day, usually a Monday, when the Naira is paid to the Central Bank for  the purchase of dollars </TD></TR> 
+<TR><TD> FX_RATE </TD><TD> DECIMAL(18,2) </TD><TD> This is the rate of exchange of Naira to the dollar on the given date. </TD></TR>
+<TR><TD> COLLECTION_DATE </TD><TD> DATE </TD><TD> This is the date, typically on a Wednesday, when Central bank disburses the purchased sum of $50,000 to each of the vendors.</TD></TR> 
+<TR><TD> COLLECTION_DAY </TD><TD> NVARCHAR(50) </TD><TD> This is the day, typically a Wednesday, when the Central bank disburses the purchased sum of $50,000 to each of the BDCs. </TD></TR> 
+<TR><TD> VENDOR_ID </TD><TD> INTEGER </TD><TD>This is an identity number given to represent the Forex vendor.   </TD></TR> 
+<TR><TD> AMOUNT </TD><TD> INTEGER </TD><TD> This is the cash amount in dollars that was bought from the CBN or any other vendor </TD><TR>  
+</Table>
+<br>
+
+
+
+<Table>
+<h3> FOREX SALES <h3>
+<TR><TH> ITEM </TH><TH>DATA TYPE</TH><TH> </TH></TR>
+<TR><TD> SALE_DATE </TD><TD> DATE </TD><TD> This is the date on which a Roxy licensed staff sells FOREX to a customer </TD></TR> 
+<TR><TD> TXN_ID </TD><TD> INTEGER </TD><TD> This is a unique identity number for each purchase or sale transaction done by Roxy BDC.  <TR><TD> VENDOR_ID </TD><TD> INTEGER </TD><TD> This is an identity number given to represent the Forex vendor.   </TD></TR> 
+<TR><TD> WEEK_NO </TD><TD> INTEGER </TD><TD> This is number of the week in which the forex is sold, using the current year's calendar. </TD></TR> 
+<TR><TD> WEEK_DAY </TD><TD> NVARCHAR(50) </TD><TD> This is the day of the week in which the forex is sold.  </TD></TR> 
+<TR><TD> P_HOLS </TD><TD> NVARCHAR(50) </TD><TD> This is the column that lists the public holidays available in the current year.</TD></TR> 
+<TR><TD> CUSTOMER_ID </TD><TD> INTEGER </TD><TD> This is the ID of the customer buying the FOREX.  </TD></TR> 
+<TR><TD> PURPOSE_ID </TD><TD> INTEGER </TD><TD> This is an identity number representing the reason for which the customer is buying the Foreign Exchange. &nbsp;&nbsp;</TD></TR> 
+<TR><TD> CATEGORY_ID </TD><TD> INTEGER </TD><TD> This is an ID classifying the types of buyers based on their buying purpose </TD></TR> 
+<TR><TD> AMOUNT </TD><TD> INTEGER </TD><TD> This is the cash amount in dollars that was bought from the CBN or any other vendor </TD><TR>  
+<TR><TD> BUY_RATE </TD><TD> DECIMAL(18,2) </TD><TD> This is the rate at which Roxy bought the FOREX that's being sold </TD></TR>
+<TR><TD> SALES_RATE </TD><TD> DECIMAL(18,2) </TD><TD> This is the sale rate determined by Roxy staff based on the buy rate and customers' buying power </TD></TR>
+<TR><TD> BEST_RATE </TD><TD> DECIMAL(18,2) </TD><TD> This is the highest possible rate at which forex can be sold, which is 3.5% of the buy rate </TD></TR> 
+<TR><TD> USD </TD><TD> INTEGER </TD><TD> This is the code for the forex when it is for all other purposes </TD></TR> 
+<TR><TD> BTA </TD><TD> INTEGER </TD><TD> This is the Business Travel Allowance for customers travelling for business purposes and cannot exceed $5000</TD></TR> 
+<TR><TD> PTA </TD><TD> INTEGER </TD><TD> This is the Personal Travel Allowance for customers travelling for personal purposes and cannot exceed $4000</TD></TR> </TD></TR> 
+</Table>
+
+
+<Table>
+<h3> VENDORS </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH> </TH>
+<TR><TD> VENDOR_ID </TD><TD> INTEGER </TD><TD> Number assigned to the  vendor for numbering purposes only </TD></TR> 
+<TR><TD> VENDOR_NAME </TD><TD> NVARCHAR(50) </TD><TD> The full name by which the vendor is registered to trade </TD></TR> 
+<TR><TD> VENDOR_CODE </TD><TD> NVARCHAR(50) </TD><TD> A shortened form of the full business trading name. An abbreviation or alias. </TD><TR>
+</Table>
+
+
+<Table>
+<h3> CUSTOMER PURPOSES </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH> </TH></TR>
+<TR><TD> ID </TD><TD> INTEGER </TD><TD> This is a numerical value classifying the customer's purpose for the purchase </TD><TR> <TR><TD> CATEGORY </TD><TD> NVARCHAR(50) </TD><TD> This is the main reason the customer desires the foreign Exchange </TD></TR> <TR><TD> PURPOSE </TD><TD> NVARCHAR(50) </TD><TD> This is the specific reason for which the customer makes the transaction </TD></TR>
+</Table>
+
+
+<Table>
+<h3> CATEGORY <h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH> </TH></TR>  
+<TR><TD> CATEGORY_ID </TD><TD> INTEGER </TD><TD> This is the ID classifying the buyers based on their buying purposes. It is a primary key. </TD></TR> 
+<TR><TD> CATEGORY </TD><TD> NVARCHAR(50) </TD><TD> This is the category which the buyers are grouped into </TD></TR>
+</Table>
+
+
+<Table>
+<h3> AGE GROUP <h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH> </TH>
+<TR><TD> AGE_GROUP </TD><TD> NVARCHAR(50) </TD><TD> This is the age group to which each customer belongs </TD></TR> <TR><TD> RANK </TD><TD> INTEGER </TD><TD> This is rank assigned to the age group for simplification of calculations </TD></TR>
+</Table>
+
+
+
+<Table>
+<h3> STAFF <h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH> </TH>
+<TR><TD> STAFF_ID </TD><TD> NVARCHAR(50) </TD><TD> This is the ID assigned to each staff member </TD><TR> 
+<TR><TD> NAME </TD><TD> NVARCHAR(50) </TD><TD> These are the staff names </TD></TR> 
+<TR><TD> GENDER </TD><TD> NVARCHAR(50) </TD><TD> This is the gender of each staff member. </TD></TR> 
+<TR><TD> FIELD </TD><TD> NVARCHAR(50) </TD><TD> This is the area of study or degree  obtained by the given staff </TD></TR> <TR><TD> DEPT </TD><TD> NVARCHAR(50) </TD><TD> This is the department that the staff member works in. </TD><TR> 
+<TR><TD> HOBBIES </TD><TD> NVARCHAR(50) </TD><TD> These are the hobbies each staff enjoys or the activities that motivate them </TD></TR> 
+<TR><TD> ADRESS </TD><TD> NVARCHAR(50) </TD><TD> This is the home adress of the staff  </TD></TR> 
+<TR> <TR><TD> SALARY </TD><TD> INTEGER </TD><TD> This is the staff salary. </TD></TR>
+</Table>
+<br>
+
+
+<Table>
+<h3> FULL CALENDAR </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE </TH><TH> 
+<TR><TD> YEAR </TD><TD> NVARCHAR(50) </TD><TD> This is the current year of the transactions </TD></TR> 
+<TR><TD> MONTH </TD><TD> NVARCHAR(50) </TD><TD> This is the current month of the transactions
+<TR><TD> DATE </TD><TD> INTEGER </TD><TD> This is the current date of the transactions </TD></TR> 
+<TR><TD> DAY </TD><TD> NVARCHAR(50) </TD><TD> This is the current day of the week of the transactions </TD></TR>
+<TR><TD> FULL_DATE </TD><TD> DATE </TD><TD> This is the full date, including the date, month and year of the transaction</TD></TR> 
+<TR><TD> WEEK_NO </TD><TD> INTEGER </TD><TD> This is the number or count of the current week of the transaction. </TD></TR> 
+<TR><TD> P_HOLS_CODE </TD><TD> NVARCHAR(50) </TD><TD> This is an abbreviation for the public holiday.   </TD></TR>
+<TR><TD> P_HOLS_NAME </TD><TD> NVARCHAR(50) </TD><TD> These are the full names of the public holidays given.   </TD></TR> 
+<TR><TD> WEEK_NAME </TD><TD> NVARCHAR(50) </TD><TD> These are names given to the weeks based on their position or fetivities
+. </TD></TR> 
+<TR><TD> SEASON </TD><TD> NVARCHAR(50) </TD><TD> This is the current weather-season in which the transaction is taking place </TD><TR>  
+</Table>
+<br><br><br><br>
+
+
+</Div>
+</body>
+
+<footer id="ft2">
+  
+  <a href="Roxy_Database.html"> BACK</a>
+        <a style="float:right" href="Roxy_SQL_DB.html"> NEXT </a>
+
+  
+<br> <br> 
+
+<p style="text-align: center">  
+  CONTACT
+  
+ <li style="list-style-type: none; text-align: center"> Mail: <a href="mailto:akuwealth@yahoo.com" target="_blank" rel="noopener"> akuwealth@yahoo.com</a></li>
+
+<p style="text-align: center">  
+     © AnalyzeWithAku 2022</p>
+
+    
+
+</footer>
+</html>

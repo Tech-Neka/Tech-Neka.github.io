@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ANOVA fOR WHR</title>
+    <link rel="stylesheet"  href="style.css" type ="text/css" media = "screen"/> 
+  </head>
+
+
+  <body>
+  
+<Div id="H13"> 
+   <br><br>
+    <h1 id="h1a"> ANALYZE WITH AKU</h1>
+     <ul id = "a2">
+      <li> <a href = "index.html"> Welcome </a></li> &nbsp;&nbsp;&nbsp;
+      <li id><a href = "my_portfolio.html"> Portfolio </a></li> &nbsp;&nbsp;&nbsp; 
+      <li id><a href = "WHR_Table_of_Contents.html"> Table of Contents </a></li> 
+  </ul>
+</Div>
+
+<Div id="a3">
+<h2> ANALYSIS OF VARIANCE (ANOVA) </h2> </Div>
+
+<!-- <b style="font-size: 22pt;"> <b> </b>PURPOSE </b> -->
+<Div id="a4">
+<p style="font-size: 22pt;">
+The Analysis of variance is a statistical tool taht measures.
+It will be used to Latitude, Climate and Coastality figures of the selected countries are presented in the tables below arranged in descending order of their corresponding Happiness Trend values. Corresponding graphs are also drawn. </p>
+<br>
+
+<style> Table, Th, Td {border:2px solid black; background: mintcream; font-size: 18pt} </style>
+
+  
+<h4><u> TABLE 1: ANOVA TABLE FOR LATITUDE OF ALL 137 COUNTRIES </u></h4>
+<table> <!-- border="2px"  style="background: mintcream; border: solid black;> -->
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>DF</th>
+            <th>Sum of Square</th>
+            <th>Mean Square</th>
+            <th>F Statistic (df1,df2)</th>
+            <th>P-value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Regression</td>
+            <td>1</td>
+            <td>42.2333</td>
+            <td>42.2333</td>
+            <td>46.1652 (1,135)</td>
+            <td style="color:red">3.173E-10</td>
+        </tr>
+        <tr>
+            <td>(between ŷi and ȳ )</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Residual</td>
+            <td>135</td>
+            <td>123.502</td>
+            <td>0.9148</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(between yi and ŷi)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Total (between yi and ȳ)</td>
+            <td>136</td>
+            <td>165.7353</td>
+            <td>1.2186</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+
+
+<h4><u>TABLE 2:  ANOVA TABLE FOR AVERAGE TEMPERATURE OF ALL 137 COUNTRIES</h4></u>
+<!-- <iframe src="Tables/.html" style= "height: 360px; width: 700px; background: white"> </iframe> -->
+<table>
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>DF</th>
+            <th>Sum of Square</th>
+            <th>Mean Square</th>
+            <th>F Statistic (df1,df2)</th>
+            <th>P-value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Regression</td>
+            <td>1</td>
+            <td>29.9203</td>
+            <td>29.9203</td>
+            <td>29.7408 (1,135)</td>
+            <td style="color:red">2.279E-07</td>
+        </tr>
+        <tr>
+            <td>(between ŷi and ȳ )</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Residual</td>
+            <td>135</td>
+            <td>135.815</td>
+            <td>1.006</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(between yi and ŷi)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Total (between yi and ȳ)</td>
+            <td>136</td>
+            <td>165.7353</td>
+            <td>1.2186</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+
+<h4><u>TABLE 3: ANOVA TABLE FOR COASTALITY OF ALL 137 COUNTRIES</h4></u>
+
+ <table>
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>DF</th>
+            <th>Sum of Square</th>
+            <th>Mean Square</th>
+            <th>F Statistic (df1,df2)</th>
+            <th>P-value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Regression</td>
+            <td>1</td>
+            <td>13.7937</td>
+            <td>13.7937</td>
+            <td>12.2557 (1,135)</td>
+            <td style="color:red">0.0006291</td>
+        </tr>
+        <tr>
+            <td>(between ŷi and ȳ )</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Residual</td>
+            <td>135</td>
+            <td>151.9416</td>
+            <td>1.1255</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(between yi and ŷi)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Total (between yi and ȳ)</td>
+            <td>136</td>
+            <td>165.7353</td>
+            <td>1.2186</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+   
+<br><br>
+
+
+<h4><u> TABLE 4: ANOVA TABLE FOR REGIONAL LATITUDE </u></h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>DF</th>
+            <th>Sum of Square</th>
+            <th>Mean Square</th>
+            <th>F Statistic (df1,df2)</th>
+            <th>P-value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Regression</td>
+             <td>1</td>
+            <td>7.8292</td>
+            <td>7.8292</td>
+            <td>11.2766 (1,17)</td>
+            <td style="color:red">0.003731</td>
+        </tr>
+        <tr>
+            <td>(between ŷi and ȳ )</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Residual</td>
+            <td>17</td>
+            <td>11.8029</td>
+            <td>0.6943</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(between yi and ŷi)</td>
+             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Total (between yi and ȳ)</td>
+            <td>18</td>
+            <td>19.6322</td>
+            <td>1.0907</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+
+<h4><u> TABLE 5: ANOVA TABLE FOR REGIONAL CLIMATE </u></h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>DF</th>
+            <th>Sum of Square</th>
+            <th>Mean Square</th>
+            <th>F Statistic (df1,df2)</th>
+            <th>P-value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Regression</td>
+             <td>1</td>
+            <td>7.8507</td>
+            <td>7.8507</td>
+            <td>11.3282 (1,17)</td>
+            <td style="color:red">0.00367</td>
+        </tr>
+        <tr>
+            <td>(between ŷi and ȳ )</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Residual</td>
+            <td>17</td>
+            <td>11.7814</td>
+            <td>0.693</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(between yi and ŷi)</td>
+             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Total (between yi and ȳ)</td>
+            <td>18</td>
+            <td>19.6322</td>
+            <td>1.0907</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+
+<h4><u> TABLE 6: ANOVA TABLE FOR REGIONAL COASTALITY </u></h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>DF</th>
+            <th>Sum of Square</th>
+            <th>Mean Square</th>
+            <th>F Statistic (df1,df2)</th>
+            <th>P-value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Regression</td>
+             <td>1</td>
+            <td>2.4963</td>
+            <td>2.4963</td>
+            <td>2.4765 (1,17)</td>
+            <td>0.134</td>
+        </tr>
+        <tr>
+            <td>(between ŷi and ȳ )</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Residual</td>
+           <td>17</td>
+            <td>17.1359</td>
+            <td>1.008</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>(between yi and ŷi)</td>
+             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Total (between yi and ȳ)</td>
+            <td>18</td>
+            <td>19.6322</td>
+            <td>1.0907</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+<div style="font-size:22pt">
+<h3><u> CONCLUSION </u></h3>
+  From the tables above, it is clear that the P-value is less than the designated alpha value of 0.05, therefore we reject Ho in all cases and conclude that there is a significant difference and all three factors- Climate, Latitude and Coastality - influence Happiness.
+<br><br><br>
+<footer id="ft2">
+
+
+  
+  <a href="WHR_correl.html"> BACK</a>
+        <a style="float:right" href="WHR_Forecasting.html"> NEXT </a>
+  <br> <br> 
+
+<p style="text-align: center">  
+  CONTACT
+  
+ <li style="list-style-type: none; text-align: center"> Mail: <a href="mailto:akuwealth@yahoo.com" target="_blank" rel="noopener"> akuwealth@yahoo.com</a></li>
+
+<p style="text-align: center">  
+            © AnalyzeWithAku 2022</p>
+
+</footer>
+</html>

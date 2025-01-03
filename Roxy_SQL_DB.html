@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roxy SQL Database </title>
+    <link rel="stylesheet"  href="style.css" type ="text/css" media = "screen"/> 
+  </head>
+
+<body>
+<Div id="rb1"> 
+<br><br>
+    <h1 id="h1a"> ANALYZE WITH AKU</h1>
+     <ul id = "a2">
+      <li> <a href = "index.html"> Welcome </a></li> &nbsp;&nbsp;&nbsp;
+      <li id><a href = "my_portfolio.html"> Portfolio </a></li> &nbsp;&nbsp;&nbsp; 
+      <li id><a href = "About_me.html"> About Me </a></li>
+  </ul>
+</Div>
+
+<Div id="a3">
+ <h2> VIEWS, CONSTRAINTS, INDEXES </h2>
+ </Div>
+<h2>  <u>VIEWS </u></h2>
+<Div id="rb3">
+  
+Views are temporary tables created from the basic tables to highlight specific designations or features or to show a broad range of features as required by the company or the analyst. They make analysis easier. Creating a view requires a lot more specification or precision than creating a simply table and a lot more rules apply.
+For example the table headers or column titles must have unique names, as must the View itself. Furthermore, some clauses like the 'ORDER BY' clause cannot be used in the query unless the 'TOP' aggregate is used in the SELECT statement.
+A View can be a union of other Views or Tables as in the Roxy example below.
+
+<br><br>
+<img src="images\Creating Views Using The WITH Stmt.png" alt="Test Image" width="70%" height="150%"/><br>
+
+<h4><u>CONSTRAINTS </u></h4>
+
+Constraints are checks set up in tables to preserve the integrity of the data, that is, to ensure that only data that meet the set specifications are allowed into the specified column. They can be created with the table initially,  or added to an already existing table. The syntax used in both cases are slightly different.
+<br><br>
+<b><span style="color:blue;">
+
+CHECK</b></span> constraints were put in the fields/columns of the FOREX Sales tables representing <b>BTA </b> and <b> PTA </b> which have a limit of $5000 and $4000 respectively. They were equally put in the <b> 'CBN Purchases' 'Buy_Amount' </b> column as this Amount has a cap of $50000, as shown in the Roxy figure below.
+<br><br>
+<b><span style="color:blue;">
+  
+UNIQUE </span> </b> constraints were also put in various fields including item ID's that are not Primary Keys 
+<br><br>
+<img src="images\Adding Constraints.png" alt="Test Image" width="70%" height="150%"/><br>
+
+<h4><u> INDEXES </u></h4>
+
+Indexes are a speedup mechanism to quickly find important or significant features of data within database tables or columns. They are automatically placed in columns that are Primary Keys to spontaneously identify them as they are the links to other tables when JOINS are required.
+<br>
+In this project, Indexes were placed in relevant tables and columns for quick reference such as the Customer table and the Forex Purchases tables to prioritise significant information. A Roxy example illustrates this below.
+<br><br> 
+<img src="images\Index_sql_syntax.jpg" alt="Test Image" width="70%" height="150%"/><br>
+
+
+
+<h4><u> STORED PROCEDURES</u></h4>
+Stored Procedures are mini software programs written in SQL language using statements or queries, that can be stored in the database for re-use. They allow encapsulation of complicated or frequently used logic, and improve query performance by utilizing cached query plans.They are thus created to perform daily, mundane or necessary tasks required very often by the business or analyst and can be and executed or called up whenever desired.
+For example, a Bureau de Change manager or CEO would require daily updates of the business' performance and to this end would want to know the daily rates and sales figures including the total and average sales and also the profit earned each business day.
+
+The figure below, from Roxy BDC illustrate this.
+<br><br>
+<img src="images\sp_syntax.jpg" alt="Test Image" width="70%" height="150%"/><br>
+
+ 
+  
+
+<div id="rb4"> </div>
+</body>
+
+
+<footer id="ft2">
+  <a href="Roxy_Tables_Info.html"> BACK</a>
+        <a style="float:right" href="Roxy_Tables_Data.html"> NEXT </a>
+  
+  
+<br> <br> 
+
+<p style="text-align: center">  
+  CONTACT
+  
+ <li style="list-style-type: none; text-align: center"> Mail: <a href="mailto:akuwealth@yahoo.com" target="_blank" rel="noopener"> akuwealth@yahoo.com</a></li>
+
+<p style="text-align: center">  
+     © AnalyzeWithAku 2022</p>
+
+    
+
+</footer>
+</html>

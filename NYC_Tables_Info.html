@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NYC Studenr Performance Tables Scheme - SQL </title>
+    <link rel="stylesheet"  href="style.css" type ="text/css" media = "screen"/> 
+  </head>
+
+
+  <body>
+  
+<Div id="NYC1"> 
+  <br><br>
+    <h1 id="h1a"> ANALYZE WITH AKU </h1>
+
+    <ul id = "a2">
+      <li><a href = "index.html"> Welcome </a></li> &nbsp;&nbsp;&nbsp;
+      <li><a href = "my_portfolio.html"> Portfolio </a></li> &nbsp;&nbsp;&nbsp; 
+      <li><a href = "About_me.html"> About Me </a></li>
+  </ul>
+</Div>
+
+<Div id="a3">
+<h2>NYC STUDENTS SAT PERFORMANCE: SQL SCHEME </h2> </Div>
+<br>
+<b style="font-size: 25pt;"> PURPOSE </b> 
+<Div id="a4">
+<p style="font-size: 25pt;">
+The main purpose of the Tables SQL Scheme or Layout is to specify the appropriate data types to use for the data research and to specify integer ranges, in view of setting constraints to prevent mistakes and outliers. 
+
+But it is also a means for identifying, and a source of obtaining useful and invaluable information about the Research focus and its Key Performance Indicators (KPIs).
+
+It is also used to identify and specify useful 'slangs' or key working terms that are used uniquely within the company, industry or Research focus.. </p>
+<br>
+
+<style> Table, TH, TD {border:2px solid black; background: mintcream} </style>
+<Table>
+<h2> SAT RESULTS FOR 2012 </h2>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH> DEFINITION</TH></TR>
+<TR><TD> DBN</TD><TD> INTEGER &nbsp; &nbsp; </TD><TD> This is a unique identity number given to each school. It consists the District code number, the Borough code and the Schools unique identity number </TD></TR>
+<TR><TD>SCHOOL NAME </TD><TD> NVARCHAR(50) </TD><TD> This is the name of the school being surveyed </TD></TR>
+<TR><TD> NUMBER OF TEST TAKERS </TD><TD> INTEGER </TD><TD> This is the number of students from that school who took the SAT exam </TD></TR>
+<TR><TD> READING AVG SCORE</TD><TD> INTEGER </TD><TD> This is the average score obtained in the SAT Reading exam </TD></TR> 
+  <TR><TD> MATH AVG SCORE</TD><TD> INTEGER </TD><TD> This is the average score obtained in the SAT Reading exam </TD></TR> 
+    <TR><TD> WRITING AVG SCORE </TD> <TD> INTEGER </TD><TD> This is the average score obtained in the SAT Reading exam </TD></TR>
+</Table>
+<br>
+
+
+
+<Table>
+<h3> CLASS SIZE </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE </TH><TH> 
+<TR><TD> CSD </TD><TD> INTEGER </TD><TD> This is a given number to identify the Class size detail </TD></TR> 
+<TR><TD> BOROUGH </TD><TD> NVARCHAR(2)  </TD><TD> This is a unique identity code for the given Borough.</TD></TR>
+<TR><TD> SCHOOL CODE </TD><TD> NVARCHAR(5) </TD><TD> This is the unique code given to each school which consists of the Borough code and a unique school ID number </TD></TR> 
+<TR><TD> SCHOOL NAME </TD><TD> NVARCHAR(50) </TD><TD> This is the name of the school being surveyed. </TD></TR>
+<TR><TD> GRADE </TD><TD> NVARCHAR(50) </TD><TD> This is the average grade obtained </TD></TR> 
+<TR><TD> PROGRAM TYPE </TD><TD> NVARCHAR(50) </TD><TD> This is the type of program being offered by the school </TD></TR> 
+<TR><TD> CORE SUBJECT</TD><TD> NVARCHAR(50) </TD><TD>This is an core subject of the program  </TD></TR> 
+<TR><TD> CORE COURSE</TD><TD> NVARCHAR(50) </TD><TD> This is the core course of the subject </TD><TR>  
+<TR><TD> SERVICE CATEGORY </TD><TD> NVARCHAR(50)  </TD><TD> This is the service category 
+<TR><TD> NO OF SEATS FILLED </TD><TD> INTEGER </TD><TD> This is the number of students who come for the program lectures </TD></TR> 
+<TR><TD> NO OF SECTIONS </TD><TD> INTEGER </TD><TD> This is the number of sections in the program </TD></TR>
+<TR><TD> AVERAGE CLASS SIZE </TD><TD> DECIMAL(4,2)  </TD><TD> This is the average size of the classes in the program</TD></TR> 
+<TR><TD> SIZE OF SMALLEST CLASS </TD><TD> INTEGER </TD><TD> This is the size of the smallest class in the program </TD></TR> 
+<TR><TD> SIZE OF LARGEST CLASS </TD><TD> INTEGER </TD><TD> This is the size of the smallest class in the program   </TD></TR> 
+<TR><TD> DATA SOURCE </TD><TD> NVARCHAR(50) </TD><TD> This is the source of the data and is either ATS or STARS </TD><TR> 
+<TR><TD> PUPIL-TEACHER RATIO </TD><TD> DECIMAL(4,2) </TD><TD> This is the ratio of students to teachers in the school </TD><TR>  
+</Table>
+<br>
+
+
+
+<Table>
+<h3> AP COLLEGE BOARD SCHL LEVEL RESULTS FOR 2010 <h3>
+<TR><TH> ITEM </TH><TH>DATA TYPE</TH><TH> </TH></TR>
+<TR><TD> DBN </TD><TD> NVARCHAR(50) </TD><TD> This is a unique identity number given to each school. It consists the District ID, the Borough code and the School's identity number </TD></TR> 
+<TR><TD> SCHOOL NAME </TD><TD> NVARCHAR(50) </TD><TD> This is the name of the school being surveyed. </TD></TR> 
+<TR><TD> AP TEST TAKERS </TD><TD> INTEGER </TD><TD> This is number of students who sat for the exams </TD></TR> 
+<TR><TD> TOTAL EXAMS SAT </TD><TD> INTEGER </TD><TD> This is the count of all SAT the exams sat for by the school students  </TD></TR> 
+<TR><TD> NO OF EXAMS WITH SCORES OF (3,4,5) </TD><TD> INTEGER </TD><TD> This is the count of all the exams with scores of 3, 4 or 5.</TD></TR> 
+</Table>
+
+
+<Table>
+<h3> SCHL ATTENDANCE/ENROLLMENT BY DISTRICE 2010-2011 </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH> </TH>
+<TR><TD> DISTRICT </TD><TD> NVARCHAR(50) </TD><TD> This is the District in which the school is located. </TD></TR> 
+<TR><TD> YTD_PERCENTAGE ATTENDANCE </TD><TD> DECIMAL(10,2) </TD><TD> This is the Year-to-Date percentage attendance of students in the school </TD></TR> 
+<TR><TD> YTD ENROLLMENT </TD><TD> INTEGER</TD><TD> This is the Year-to-Date enrollment of students in the school. </TD><TR>
+</Table>
+
+
+<Table>
+<h3> SCHOOL DEMOGRAPHICS </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH> </TH></TR>
+<TR><TD> DBN </TD><TD> NVARCHAR(50) </TD><TD> This is a unique identity number given to each school. It consists the District ID, the Borough code and the School's ID number </TD><TR> 
+<TR><TD> SCHOOL NAME </TD><TD> NVARCHAR(50) </TD><TD> This is the name of the school being surveyed. </TD></TR> 
+<TR><TD> SCHOOL YEAR </TD><TD> INTEGER </TD><TD> This is the School year in question </TD></TR>
+<TR><TD> FL PERCENT </TD><TD> DECIMAL(4,2) </TD><TD> This is the percentage of final year in the school that year </TD></TR> 
+<TR><TD> FRL PERCENT </TD><TD> DECIMAL(4,2) </TD><TD> This is the percentage of freshmen in the school in the given year </TD><TR> 
+<TR><TD> TOTAL ENROLLMENT </TD><TD> NINTEGER </TD><TD> TThis is the count of all students enrolled in the school that year </TD></TR> 
+<TR><TD> PREK </TD><TD> INTEGER </TD><TD> This is the number of students in pre-kindergarten class. </TD></TR> 
+<TR><TD> K </TD><TD> INTEGER </TD><TD> This is the number of students in the kindergarten class. </TD><TR> 
+<TR><TD> GRADE 1 </TD><TD> INTEGER </TD><TD> This is the number of students in grade 1.</TD></TR> 
+<TR><TD> GRADE 2 </TD><TD> INTEGER </TD><TD> This is the number of students in grade 2.</TD></TR> 
+<TR><TD> GRADE 3 </TD><TD> INTEGER </TD><TD> This is the number of students in grade 3.</TD></TR> 
+<TR><TD> GRADE 4 </TD><TD> INTEGER </TD><TD> This is the number of students in grade 4.</TD></TR> 
+<TR><TD> GRADE 5 </TD><TD> INTEGER </TD><TD> This is the number of students in grade 5.</TD></TR> 
+<TR><TD> GRADE 6 </TD><TD> INTEGER </TD><TD> This is the number of students in grade 6.</TD></TR> 
+<TR><TD> GRADE 7 </TD><TD> INTEGER </TD><TD> This is the number of students in grade 7.</TD></TR> 
+<TR><TD> GRADE 8 </TD><TD> INTEGER </TD><TD> This is the number of students in grade 8.</TD></TR> 
+<TR><TD> GRADE 9 </TD><TD> INTEGER </TD><TD> This is the number of students in grade 9.</TD></TR> 
+<TR><TD> GRADE 10 </TD><TD> INTEGER </TD><TD> This is the number of students in grade 10.</TD></TR> 
+<TR><TD> GRADE 11</TD><TD> INTEGER </TD><TD> This is the number of students in grade 11.</TD></TR> 
+<TR><TD> GRADE 12</TD><TD> INTEGER </TD><TD> This is the number of students in grade 12.</TD></TR> 
+<TR><TD> ELL_NUM</TD><TD> INTEGER </TD><TD> This is the number of students in elementary grades</TD></TR> 
+<TR><TD> ELL_PERCENT </TD><TD> DECIMAL(4,2) </TD><TD> This is the percentage of students inelementary grades.</TD></TR> 
+<TR><TD> SPED_NUM </TD><TD> INTEGER </TD><TD> This is the number of students in grade 1.</TD></TR> 
+<TR><TD> SPED_PERCENT </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of students in grade 1.</TD></TR> 
+<TR><TD> CTT_NUM </TD><TD> INTEGER </TD><TD> This is the number of students in grade 1.</TD></TR> 
+<TR><TD> SELF_CONTAINED_NUM </TD><TD> INTEGER </TD><TD> This is the number of students in grade 1.</TD></TR> 
+<TR><TD> ASIAN_NUM </TD><TD> INTEGER </TD><TD> This is the number of Asian students enrolled in the school</TD></TR> 
+<TR><TD> ASIAN_PERCENT </TD><TD> DECIMAL(4,2) </TD><TD> This is the percentage of Asian students enrolled in the school.</TD></TR> 
+<TR><TD> BLACK_NUM </TD><TD> INTEGER </TD><TD> This is the number of black students enrolled in the school.</TD></TR> 
+<TR><TD> BLACK_PERCENT </TD><TD> DECIMAL(4,2) </TD><TD> This is the percentage of black students enrolled in the school.</TD></TR> 
+<TR><TD> HISPANIC_NUM </TD><TD> INTEGER </TD><TD> This is the number of Hispanic students enrolled in the school.</TD></TR> 
+<TR><TD> HISPANIC_PERCENT </TD><TD> DECIMAL(4,2) </TD><TD> This is the percentage of Hispanic students enrolled in the school.</TD></TR> 
+<TR><TD> WHITE_NUM </TD><TD> INTEGER </TD><TD> This is the number of white students enrolled in the school.</TD></TR> 
+<TR><TD> WHITE_PERCENT </TD><TD> DECIMAL(4,2) </TD><TD> This is the percentage of white students enrolled in the school.</TD></TR> 
+<TR><TD> MALE_NUM </TD><TD> INTEGER </TD><TD> This is the number of male students enrolled in the school.</TD></TR> 
+<TR><TD> MALE_PERCENT </TD><TD> DECIMAL(4,2) </TD><TD> This is the percentage of male students enrolled in the school.</TD></TR> 
+<TR><TD> FEMALE_NUM </TD><TD> INTEGER </TD><TD> This is the number of female students enrolled in the school.</TD></TR> 
+<TR><TD> FEMALE_PERCENT</TD><TD> DECIMAL(4,2) </TD><TD> This is the percentage of female students enrolled in the school.</TD></TR> 
+</Table>
+<br>
+
+
+
+<Table>
+<h3> GRADUATE OUTCOMES </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE </TH><TH> 
+<TR><TD> DEMOGRAPHIC </TD><TD> NVARCHAR(50) </TD><TD> This is the demographic being surveyed or described </TD></TR> 
+<TR><TD> DBN </TD><TD> NVARCHAR(50) </TD><TD> This is school ID which comprises the District number, the borough code and the school ID number
+<TR><TD> SCHOOL NAME </TD><TD> NVARCHAR(50) </TD><TD> This is the name of the school being surveyed </TD></TR> 
+<TR><TD> COHORT </TD><TD> INTEGER </TD><TD> This is the school year in question  </TD></TR>
+<TR><TD> TOTAL COHORTS </TD><TD> INTEGER </TD><TD> This is the number of cohorts in the school in that particular year</TD></TR> 
+<TR><TD> TOTAL GRADS - N </TD><TD> INTEGER </TD><TD> This is the number or count of all the graduands that year </TD></TR> 
+<TR><TD> TOTAL GRADS - % OF COHORTS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of grads as a percentage of the cohorts </TD></TR>
+<TR><TD> TOTAL REGENTS- N </TD><TD> INTEGER </TD><TD> This is the number or count of all the Regents that year   </TD></TR> 
+<TR><TD> TOTAL REGENTS - % OF COHORTS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of Regents as a percentage of the cohorts</TD></TR>
+<TR><TD> REGENTS - % OF GRADS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of Regents as a percentage of the graduands </TD><TR> 
+<TR><TD> ADV. REGENTS- N </TD><TD> INTEGER </TD><TD> This is the number or count of all the Regents with advanced degrees.   </TD></TR> 
+<TR><TD> ADV REGENTS - % OF COHORTS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of Regents with advanced degrees as a percentage of the cohorts</TD></TR> 
+<TR><TD> ADV REGENTS - % OF GRADS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of Regents with advanced degrees as a percentage of the graduands</TD><TR>  
+<TR><TD> REGENTS W/O ADV- N </TD><TD> INTEGER </TD><TD> This is the number or count of all the Regents without advanced degrees that year.   </TD></TR> 
+<TR><TD> REGENTS W/O ADV- % OF COHORTS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of Regents without advanced degrees as a percentage of the cohorts </TD></TR> 
+<TR><TD> REGENTS W/O ADV - % OF GRADS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of Regents without advanced degrees as a percentage of the graduands </TD><TR>
+<TR><TD> LOCAL - N </TD><TD> INTEGER </TD><TD> This is the number or count of all the locals that year.   </TD></TR> 
+<TR><TD> LOCAL - % OF COHORTS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of locals as a percentage of the cohorts</TD></TR> 
+<TR><TD> LOCAL - % OF GRADS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of locals as a percentage of the graduands. </TD><TR> 
+<TR><TD> STILL ENROLLED - N </TD><TD> INTEGER </TD><TD> This is the number or count of all the students still enrolled that year.   </TD></TR> 
+<TR><TD> STILL ENROLLED - % OF COHORTS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of students still enrolled as a percentage of the cohorts</TD></TR> 
+<TR><TD> DROPPED OUT - N </TD><TD> INTEGER </TD><TD> This is the number or count of all the students who dropped out that year.   </TD></TR> 
+<TR><TD> DROPPED OUT - % OF COHORTS </TD><TD> DECIMAL(4,2) </TD><TD> This is the number of students not enrolled as a percentage of the cohorts</TD></TR> 
+</TR>
+</Table>
+
+<br><br><br><br>
+
+
+</Div>
+</body>
+
+<footer id="ft2">
+  
+  <a href="NYC_Database.html"> BACK</a>
+        <a style="float:right" href="NYC_SQL_DB.html"> NEXT </a>
+
+  
+<br> <br> 
+
+<p style="text-align: center">  
+  CONTACT
+  
+ <li style="list-style-type: none; text-align: center"> Mail: <a href="mailto:akuwealth@yahoo.com" target="_blank" rel="noopener"> akuwealth@yahoo.com</a></li>
+
+<p style="text-align: center">  
+     © AnalyzeWithAku 2022</p>
+
+    
+
+</footer>
+</html>

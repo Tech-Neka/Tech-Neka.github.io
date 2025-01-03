@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> W.Happiness Tables Scheme</title>
+    <link rel="stylesheet"  href="style.css" type ="text/css" media = "screen"/> 
+  </head>
+
+
+  <body>
+  
+<Div id="H13"> 
+   <br><br>
+    <h1 id="h1a"> ANALYZE WITH AKU</h1>
+     <ul id = "a2">
+      <li> <a href = "index.html"> Welcome </a></li> &nbsp;&nbsp;&nbsp;
+      <li id><a href = "my_portfolio.html"> Portfolio </a></li> &nbsp;&nbsp;&nbsp; 
+      <li id><a href = "About_me.html"> About Me </a></li> 
+  </ul>
+</Div>
+
+<Div id="a3">
+<h2> WORLD HAPPINESS SCORES: SQL SCHEME </h2> </Div>
+<br>
+<b style="font-size: 22pt;"> PURPOSE </b> 
+<Div id="a4">
+<p style="font-size: 22pt;">
+The main purpose of the Tables Scheme is to specify the appropriate data types to use for the data research and to specify integer ranges, in view of setting constraints to prevent mistakes and outliers. 
+
+But it is also a means for identifying, and a source of obtaining, useful and invaluable information about the company and its Key Performance Indicators (KPIs).
+
+It is used furthermore, for identifying professional working terms which differ from industry to industry, company to company and analyst to analyst. It is an SQL tool.<br><br>
+  The tables used herein include the	original data sourced from World Happiness Reports, World Latitude reports, World Weather reports and World Coastality reports.  They also include calculated forecasts.
+  
+  </p>
+ <br>
+
+<style> Table, TH, TD {border:2px solid black; background: mintcream} </style>
+<Table>
+<h3> WORLD HAPPINESS REPORT 2013 </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH></TH></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> REGION </TD><TD> INTEGER </TD><TD> This is a number representing the region the country belong to  </TD></TR>
+<TR><TD> LADDER </TD><TD> DECIMAL(18,2) </TD><TD>  This is the score given to countries, based on their happiness level </TD></TR>
+<TR><TD> SOCIAL GROUP</TD><TD> DECIMAL(18,2) </TD><TD> This is the opportunity of citizens to belong to social group </TD></TR> 
+  <TR><TD> FREEDOM </TD><TD> DECIMAL(18,2) </TD><TD> This is the level of fredom individuals have to their rights </TD></TR> 
+    <TR><TD> FAIRNESS </TD> <TD> DECIMAL(18,2) </TD><TD> This is the level of honesty of ruling parties or the government </TD></TR>
+    <TR><TD> GENEROSITY </TD><TD> DECIMAL(18,2) </TD><TD> This is a good experience of kindness from others and leads to happiness  </TD></TR>
+    <TR><TD> EFFECT 1 </TD><TD> DECIMAL(18,2) </TD><TD> This is the range of good emotion people naturally have </TD></TR>
+    <TR><TD> EFFECT 2 </TD><TD> DECIMAL(18,2) </TD><TD> This is the range of unhappy emotion people naturally have</TD></TR>
+    <TR><TD> HAPPINESS YESTERDAY </TD><TD> DECIMAL(18,2) </TD><TD> This describes how happy a person was the previous day </TD></TR>
+    <TR><TD> GDP PER CAPITA </TD><TD> DECIMAL(18,2) </TD><TD> The Gross Domestic Product describes how financially independent and affluent a country is as a result of generating wealth from within </TD></TR> 
+    <TR><TD> EXPECTED LIFE SPAN </TD><TD> DECIMAL(18,2) </TD><TD> This is the average age a citizen is expected to live to in that country </TD></TR> 
+</Table>
+<br>
+
+
+
+<Table>
+<h3> WORLD HAPPINESS REPORT 2019 </h3>
+<TR><TH> ITEM </TH><TH> DATA TYPE &nbsp;</TH><TH></TH></TR>
+<TR><TD> RANK </TD><TD> INTEGER </TD><TD> This is the rank given to countries based on their happiness score with 1 being the highest </TD></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> SCORE </TD><TD> DECIMAL(18,2) </TD><TD> This is the score given to countries, based on their happiness level </TD></TR>
+<TR><TD> GDP PER CAPITA </TD><TD> DECIMAL(18,2) </TD><TD> The Gross Domestic Product describes the economic output of a country as a result of its resident producers </TD></TR>
+<TR><TD> SOCIAL GROUP</TD><TD> DECIMAL(18,2) </TD><TD> This is the opportunity of citizens to belong to social group </TD></TR> 
+<TR><TD> EXPECTED LIFE SPAN </TD><TD> DECIMAL(18,2) </TD><TD> This is the average age a citizen is expected to live to in that country </TD></TR> 
+<TR><TD> FREEDOM </TD><TD> DECIMAL(18,2) </TD><TD> This is the level of fredom individuals have to their rights </TD></TR> 
+<TR><TD> GENEROSITY </TD><TD> DECIMAL(18,2) </TD><TD> This is a good experience of kindness from others and leads to happiness  </TD></TR>
+<TR><TD> FAIRNESS </TD> <TD> DECIMAL(18,2) </TD><TD> This is the level of honesty of ruling parties or the government </TD></TR>
+</Table>
+<br>
+
+  
+  
+<Table>
+<h3>HAPPINESS REPORT 2013:2019 SUMMARY </h3>
+<TR><TH> ITEM </TH><TH>DATA TYPE</TH><TH> </TH></TR>
+<TR><TD> RANK </TD><TD> INTEGER </TD><TD> This is the rank given to countries based on their happiness score </TD></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> REGION </TD><TD> NVARCHAR(50) </TD><TD> This is the region of the country being surveyed </TD></TR>
+<TR><TD> 2013 SCORE </TD><TD> DECIMAL(18,2) </TD><TD>This is the 2013 score given to countries, based on their happiness level </TD></TR> 
+<TR><TD> 2013 RANK</TD><TD>DECIMAL(18,2)</TD><TD>This is the 2013 rank given to countries based on their happiness score</TD></TR> 
+<TR><TD> 201X SCORE <br> (Where 3 < X < 9) </TD><TD> DECIMAL(18,2) </TD><TD> This is the 201X score given to countries, based on their happiness level </TD></TR> 
+<TR><TD> 201X RANK <br> (Where 3 < X < 9) </TD><TD> DECIMAL(18,2) </TD><TD> This is the 201X rank given to countries based on their happiness score   </TD></TR>
+<TR><TD> 2019 SCORE </TD><TD> DECIMAL(18,2) </TD><TD> This is the 2019 score given to countries, based on their happiness level </TD></TR> 
+<TR><TD> 2019 RANK</TD><TD> DECIMAL(18,2) </TD><TD> This is the 2019 rank given to countries based on their happiness score   </TD></TR>
+</Table>
+<br>
+  
+  
+
+<Table>
+<h3> COUNTRIES BY THEIR AVERAGE TEMPERATURE <h3>
+<TR><TH> ITEM </TH><TH>DATA TYPE</TH><TH> </TH></TR>
+<TR><TD> RANK </TD><TD> INTEGER </TD><TD> This is the rank given to countries based on their average temperature with 1 being the highest </TD></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> AVERAGE TEMPERATURE </TD><TD> DECIMAL(18,2) </TD><TD> This is the average temperature the country record throughout the year   </TD></TR> 
+<TR><TD> COLDEST MONTH </TD><TD> DECIMAL(18,2) </TD><TD> This is the lowest temperature the country records throughout the year  </TD></TR> 
+<TR><TD> HOTTEST MONTH </TD><TD> DECIMAL(18,2) </TD><TD> This is the highest temperature the country records throughout the year  </TD></TR> 
+<TR><TD> VARIATION </TD><TD> DECIMAL(18,2) </TD><TD> This is the difference between the highest and lowest  temperature the country records throughout the year </TD></TR> 
+</Table>
+<br>
+
+
+
+<Table>
+<h3> COUNTRIES BY THEIR LATITUDES AND LONGITUDES <h3>
+<TR><TH> ITEM </TH><TH>DATA TYPE</TH><TH> </TH></TR>
+<TR><TD> NO </TD><TD> INTEGER </TD><TD> This is a number representing the count of countries surveyed  </TD></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed</TD></TR>
+<TR><TD> COUNTRY-CODE</TD><TD> NVARCHAR(50) </TD><TD> This is the code for the name of country being surveyed </TD></TR>
+<TR><TD> LATITUDES </TD><TD> DECIMAL(18,2) </TD><TD> This is the country's line of latitude or distance from the equator </TD></TR> 
+<TR><TD> LONGITUDES </TD><TD> DECIMAL(18,2) </TD><TD> This is the country's line of longitude or distance from the Northrn pole   </TD></TR> 
+</Table>
+<br>
+
+
+
+
+  
+<Table>
+<h3> COUNTRIES BY COASTLINE<h3>
+<TR><TH> ITEM </TH><TH>DATA TYPE</TH><TH> </TH></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> COATAL RANK </TD><TD> INTEGER </TD><TD> This is the rank given to countries based on the size of the coastal area as taken by the World Resource Institute</TD></TR>
+<TR><TD>COASTAL AREA KM </TD><TD> INTEGER </TD><TD> This is the size of the coastal area in kilometers of the country being surveyed by the World Resource Institute </TD></TR>
+<TR><TD> LAND AREA KM2 (TWF) </TD><TD>INTEGER </TD><TD> This is the entire land area of the kilometers country being surveyed </TD></TR> 
+<TR><TD> COAST/LAND AREA RATIO (M/KM2) (WRI)  </TD><TD> DECIMAL(18,2) </TD><TD> This is the ratio of th coastal area and the entire land area of the country being surveyed in meters by kilometers</TD></TR> 
+</Table>
+<br>
+     
+<Table>
+<h3>WORLD HAPPINESS SCORES: CORRELATION BY COASTLINE<h3>
+<TR><TH> ITEM </TH><TH>DATA TYPE</TH><TH> </TH></TR>
+<TR><TD> H_RANK@2016 ESTIMATE 'C'  </TD><TD> INTEGER </TD><TD> This is the rank given to countries based on their estimated happiness scores at 2016</TD></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> REGION </TD><TD> NVARCHAR(50) </TD><TD> This is the region of the country being surveyed </TD></TR>
+<TR><TD> C= ∑Y/n, X = 0 </TD><TD> DECIMAL(18,2) </TD><TD> These are the computed values from the regression equation <br> Y = BX + C, which make up the 'Y' axis Intercept</TD></TR> 
+<TR><TD>COASTAL AREA KM </TD><TD> INTEGER </TD><TD> This is the size of the coastal area in kilometers of the country being surveyed by the World Resource Institute </TD></TR>
+<TR><TD> CA_RANK</TD><TD>DECIMAL(18,2)</TD><TD>This is the estimate of the 2023 rank given to countries based on their happiness score</TD></TR>
+<TR><TD> LAND AREA KM2 (TWF) </TD><TD>INTEGER </TD><TD> This is the entire land area of the kilometers country being surveyed </TD></TR> 
+<TR><TD> COAST/LAND AREA RATIO (M/KM2) (WRI)  </TD><TD> DECIMAL(18,2) </TD><TD> This is the ratio of the coastal area and the entire land area of the country being surveyed in meters by kilometers</TD></TR> 
+<TR><TD> CLA_RANK </TD><TD>INTEGER</TD><TD>This is the estimate of the 2023 rank given to countries based on their happiness score</TD></TR>
+<TR><TD> C_R_RANK </TD><TD>DECIMAL(18,4)</TD><TD>This is the estimate of the 2023 rank given to countries based on their happiness score</TD></TR>
+</Table>
+<br>
+
+<Table>
+<h3>HAPPINESS SCORES: REGIONAL CORRELATION OF LATITUDE, CLIMATE AND COASTALITY <h3>
+<TR><TH> ITEM </TH><TH>DATA TYPE</TH><TH> </TH></TR>
+<TR><TD> S/NO </TD><TD> INTEGER </TD><TD> This is a number representing the count of the countries being surveyed </TD></TR>
+<TR><TD> REGION </TD><TD> NVARCHAR(50) </TD><TD> This is the region of the country being surveyed </TD></TR>
+<TR><TD> SUB-REGION </TD><TD> NVARCHAR(50) </TD><TD> This is the sub-region of the country being surveyed </TD></TR>
+<TR><TD> POSITION</TD><TD> NVARCHAR(50) </TD><TD> This is the direction the country faces: either North or South  </TD></TR> 
+<TR><TD> HAPPINESS SCORES </TD><TD> DECIMAL(18,2) </TD><TD>This is the average of the happiness scores obtained from 2013 to 2019 </TD></TR> 
+<TR><TD> COUNT </TD><TD> INTEGER </TD><TD> This is a sum of countries that make up the sub-region in question .</TD></TR>
+<TR><TD> HAPPINESS SCORES SUM</TD><TD> DECIMAL(18,2) </TD><TD>This is the sum of the average happiness scores of the countries in the sub-region in question. </TD></TR>
+<TR><TD> LATITUDE SUM </TD><TD>DECIMAL(18,2)</TD><TD>This is the sum of the latitudes of the countries in the sub-region in question </TD></TR> 
+<TR><TD> CLIMATE SUM </TD><TD> DECIMAL(18,2) </TD><TD> This is the sum of the average temperatures of the countries in the sub-region in question </TD></TR>
+<TR><TD> COASTALITY SUM (%) </TD><TD> DECIMAL(18,2) </TD><TD> This is the sum of coastality ratios of the countries in the sub-region in question. </TD></TR> 
+<TR><TD> HAPPINESS SCORES AVG</TD><TD> DECIMAL(18,2) </TD><TD>This is the average of the average happiness scores of the countries in the sub-region in question. </TD></TR>
+<TR><TD> LATITUDE AVERAGE </TD><TD>DECIMAL(18,2)</TD><TD>This is the average of the latitudes of the countries in the sub-region in question </TD></TR> 
+<TR><TD> CLIMATE AVERAGE </TD><TD> DECIMAL(18,2) </TD><TD> This is the average of the average temperatures of the countries in the sub-region in question </TD></TR>
+<TR><TD> COASTALITY AVERAGE (M/KM2) (WRI)  </TD><TD> DECIMAL(18,2) </TD><TD> This is the average of coastality ratios of the countries in the sub-region in question. </TD></TR> 
+
+
+<br>
+  
+
+  
+ <Table>
+<h3>WORLD HAPPINESS INDEX FORECAST 2022:2031 <h3>
+<TR><TH> ITEM </TH><TH>DATA TYPE</TH><TH> </TH></TR>
+<TR><TD> RANK </TD><TD> INTEGER </TD><TD> This is the rank given to countries based on their happiness score </TD></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> REGION </TD><TD> NVARCHAR(50) </TD><TD> This is the region of the country being surveyed </TD></TR>
+<TR><TD> 'C'_INTERCEPT VALUES </TD><TD> DECIMAL(18,2) </TD><TD> These are the computed values from the regression equation <br> Y = BX + C, which make up the 'Y' axis Intercept</TD></TR> 
+ <TR><TD> 2022_SCORE </TD><TD> DECIMAL(18,2) </TD><TD> This is the set of year 2023 values, the first to be computed </TD></TR> 
+<TR><TD> 202X_SCORE <br> (Where 3 <= X <= 9)</TD><TD> DECIMAL(18,2) </TD><TD> This is the set of year 2023 to 2032 values, computed from the 'Y' equation </TD></TR> 
+<TR><TD> 2031_SCORE</TD><TD> DECIMAL(18,2) </TD><TD> This is the set of year 2032 values, computed from the 'Y' equation</TD></TR>  
+</Table>
+ <br>
+  
+  
+  
+  
+  
+<Table>
+<h3>WORLD HAPPINESS INDEX FORECAST 2022:2031 SHOWING RANKS <h3>
+<TR><TH> ITEM </TH><TH>DATA TYPE</TH><TH> </TH></TR>
+<TR><TD> RANK@2016 ESTIMATE 'C'  </TD><TD> INTEGER </TD><TD> This is the rank given to countries based on their estimated happiness scores at 2016</TD></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> REGION </TD><TD> NVARCHAR(50) </TD><TD> This is the region of the country being surveyed </TD></TR>
+<TR><TD> C= ∑Y/n, X = 0 </TD><TD> DECIMAL(18,2) </TD><TD> These are the computed values from the regression equation <br> Y = BX + C, which make up the 'Y' axis Intercept</TD></TR> 
+<TR><TD> RANK @2022</TD><TD>DECIMAL(18,2)</TD><TD>This is the estimate of the 2023 rank given to countries based on their happiness score</TD></TR> 
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> REGION </TD><TD> NVARCHAR(50) </TD><TD> This is the region of the country being surveyed </TD></TR>
+<TR><TD> 2022_ESTIMATE </TD><TD> DECIMAL(18,2) </TD><TD>This is the estimate of the 2023 score given to countries, based on their happiness level </TD></TR> 
+<TR><TD> RANK @202X <br> (Where 3 <= X <= 6) </TD><TD> DECIMAL(18,2) </TD><TD> This is the estimate of the 202X rank given to countries based on their happiness score   </TD></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> REGION </TD><TD> NVARCHAR(50) </TD><TD> This is the region of the country being surveyed </TD></TR>
+<TR><TD> 202X_ESTIMATE <br> (Where 3 <= X <= 6) </TD><TD> DECIMAL(18,2) </TD><TD> This is the estimate of the 202X score given to countries, based on their happiness level </TD></TR> 
+<!--<TR><TD> RANK @2026 </TD><TD> DECIMAL(18,2) </TD><TD> This is the estimate of the 2026 rank given to countries based on their happiness score   </TD></TR>
+<TR><TD> COUNTRY</TD><TD> NVARCHAR(50) </TD><TD> This is the name of the country being surveyed </TD></TR>
+<TR><TD> REGION </TD><TD> NVARCHAR(50) </TD><TD> This is the region of the country being surveyed </TD></TR>
+<TR><TD> 2026_ESTIMATE </TD><TD> DECIMAL(18,2) </TD><TD> This is the estimate of the 2026 score given to countries, based on their happiness level </TD></TR> -->
+</Table>
+
+ 
+<br><br><br><br>
+
+
+
+</Div>
+</body>
+
+<footer id="ft2">
+  
+  <a href="WHR_Database.html"> BACK</a>
+        <a style="float:right" href="WHR_Tools.html"> NEXT </a>
+  <p style="TEXT-ALIGN: center">  
+
+
+  
+  CONTACT<br>
+  akuwealth@yahoo.com<br><br>
+
+    copyright @AnaylzeWithAku 2022</p>
+
+  
+</footer>

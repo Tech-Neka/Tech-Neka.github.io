@@ -1,0 +1,45 @@
+ .in {width: 100px;
+height: 25pt;
+font-size: 18pt;
+border-radius: 50%;
+text-align: center;
+}
+
+.Q {color: skyblue;
+font-size: 80px;
+}
+ #scorecard {
+width:40%;
+height: 400px;
+font-size: 30px;
+color:skyblue;
+}
+
+ #scard {
+color:skyblue;
+font-size: 35px;
+}  
+
+input {
+height:30px;
+width:30px
+}
+
+p{
+font-size: 25pt;
+}
+
+button {
+height: 60px;
+width: 200px;
+border-radius: 20%;
+font-size: 50px;
+background: indigo;
+}
+
+
+
+h1 {
+
+text-align: center;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <title>User Data</title>
+    
+    
+        
+    <style>
+         #form {width:600px;
+                height:700px;
+         background:skyblue;
+
+margin-left: 20px;
+margin-top: 10px;
+text-align: center;
+border-radius:20px ;
+
+}  
+
+ <!-- #div1 {width:640px;
+       height:640px;
+   background: ;
+margin-left: 20px;
+border: 2px;
+
+}
+
+#h1 {color:blue;
+
+}
+
+ button {height:20px;
+background: whit;
+width: 185px;
+}
+
+
+    #text, #text2 {height:15px;
+width: 185px;
+}
+
+ </style>   
+    </head>
+    <body>
+        <!-- <h1>USER DATA</i></h1>-->
+        
+        	
+      
+<div id="form">
+        <br>
+         <h1>
+            <span id="nameVal2">USER</span> DATA
+        </h1>
+      
+    <br>
+            
+<h3 style="margin-left: -400px"><u> PERSONAL DETAILS </u><h3>
+   <label style="margin-left:px"> First Name:</label>
+       <button id="nameVal"> </button>
+       
+        <label> Last Name: </label> 
+        <button id="lnameVal"> </button> <br><br>
+           
+        <label> Nationality: </label>   
+        <button id="natVal"></button>
+ 
+      
+    
+           
+             <label style="margin-left:30px"> Gender: </label>   
+        <button id="gendVal"> </button> <br><br> 
+            
+           
+    <label style="margin-left:10px"> Phone No: </label>  
+         <button id="telVal"> </button>
+            
+            <label 	style="margin-left:45px"> Email: </label>  
+            <button id="emailVal"> </button><br>
+            <br>
+                     <br><br><br>
+        
+           <h3 style="margin-left: -450px"><u> OTHER DETAILS </u> <h3>
+           <label style="margin-left:20px"> Address: </label> 
+            <button id="locVal"> </button>
+            
+            <label style="margin-left:45px"> Line 2: </label>    
+            <button id="loc2Val"> </button><br>  
+        <br>
+            <label style="margin-left:55px"> City: </label>    
+            <button id="cityVal"> </button>
+            
+            <label style="margin-left:35px"> Country </label> 
+            <button id="cntryVal"> </button><br>
+            
+            <br>
+        
+            <label style="margin-left: 10px"> Questions </label>
+             <button class="text" id="textVal"> </button>
+        
+             <label style="margin-left:10px"> Comments </label>
+             <button class="text" id="text2Val"> </button><br>
+                 
+            <br><br><br>  
+
+
+            <a href="Apps_User_Forms.html"> Return </a>
+             
+        </div>    
+          <script>
+        function getParameterByName(name, url) 
+            {
+        if (!url) url = window.location.href; 
+        name = name.replace(/[\[\]]/g, '\\$&'); 
+
+        var regex = new RegExp('[?&]' 
+        + name + '(=([^&#]*)|&|#|$)'), 
+        results = regex.exec(url); 
+
+if (!results) return 'null'; 
+if (!results[2]) return 'null'; 
+return decodeURIComponent(results[2].replace(/\+/g, ' ')); 
+
+}
+var name1 = getParameterByName('name22'); 
+document.getElementById('nameVal').innerHTML
+= name1;
+
+
+
+
+    
+
+if (name1 != 'null') {
+document.getElementById('nameVal2').innerHTML
+= name1 + "'" + 's';
+}
+   var lname = getParameterByName('lname22'); 
+document.getElementById('lnameVal').innerHTML
+= lname;  
+
+
+
+var nat = getParameterByName('nat22'); 
+document.getElementById('natVal').innerHTML
+= nat; 
+
+
+ 
+
+
+var gend = getParameterByName('gender'); 
+document.getElementById('gendVal').innerHTML
+= gend;
+
+
+
+
+
+
+var telno = getParameterByName('tel22'); 
+document.getElementById('telVal').innerHTML
+= telno;
+
+
+
+var email = getParameterByName('email22'); 
+document.getElementById('emailVal').innerHTML
+= email;
+
+
+
+
+
+var loc = getParameterByName('loc22'); 
+document.getElementById('locVal').innerHTML
+= loc;
+
+
+
+
+var loc2 = getParameterByName('loc222'); 
+document.getElementById('loc2Val').innerHTML
+= loc2;
+
+
+
+
+
+
+var city = getParameterByName('city22'); 
+document.getElementById('cityVal').innerHTML
+= city;
+
+
+
+
+
+
+var cntry = getParameterByName('cntry22'); 
+document.getElementById('cntryVal').innerHTML
+= cntry;
+
+
+
+
+
+
+var text = getParameterByName('text22'); 
+document.getElementById('textVal').innerHTML
+= text;
+
+
+
+
+
+
+
+
+
+
+
+
+var text2 = getParameterByName('text222'); 
+document.getElementById('text2Val').innerHTML
+= text2;
+        
+      </script>
+    </body>
+</html>
